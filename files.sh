@@ -1,6 +1,5 @@
 #!/usr/bin/bash
 
-extentions=("123")
 
 echo "Enter folder name >>" 
 read path
@@ -18,6 +17,3 @@ then mkdir $path/${file##*.}
 mv $path/*.${file##*.} $path/${file##*.}
 fi
 done
-
-
-echo "$extentions"
